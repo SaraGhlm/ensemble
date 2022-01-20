@@ -1,14 +1,6 @@
 <template>
-  <v-card width="300" min-height="600" class="mx-auto">
-    <v-img height="400" :src="src">
-      <template v-slot:placeholder>
-        <v-row class="fill-height ma-0" align="center" justify="center">
-          <v-progress-circular
-            indeterminate
-            color="grey lighten-4"
-          ></v-progress-circular>
-        </v-row>
-      </template>
+  <v-card width="300" min-height="600" class="mx-auto d-flex flex-column">
+    <v-img height="400" lazy-src="@/assets/ImageNotAvailable.png" :src="src">
     </v-img>
 
     <v-card-text class="pb-2">
@@ -19,7 +11,7 @@
       </p>
     </v-card-text>
 
-    <v-card-actions class="py-0">
+    <v-card-actions>
       <v-spacer></v-spacer>
 
       <v-btn @click="alert"> Button </v-btn>

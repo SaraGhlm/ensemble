@@ -114,7 +114,6 @@ export default {
     loadMore() {
       if (this.title !== "") {
         this.page++;
-        console.log(this.page);
         const endpoint = `${this.url}${this.titleParam}${this.title}${this.yearParam}${this.year}${this.pageParam}${this.page}${this.apiKeyParam}`;
 
         const xhr = new XMLHttpRequest();
