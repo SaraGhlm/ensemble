@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-app-bar app color="indigo darken-4" dark prominent>
+    <v-app-bar app color="blue-grey darken-4" dark prominent>
       <v-app-bar-title class="text-no-wrap hidden-xs-only align-self-center">
         OMDB Movie Search
       </v-app-bar-title>
@@ -9,7 +9,7 @@
         <v-layout row wrap justify-end>
           <v-flex xs12 sm8 md4>
             <v-text-field
-              class="mx-2"
+              class="mx-2 mt-3 mt-sm-3 mt-md-2"
               label="Movie Title"
               v-model="title"
               :rules="[rules.required]"
@@ -19,15 +19,15 @@
 
           <v-flex xs6 sm6 md2>
             <v-text-field
-              class="mx-2"
+              class="mx-2 mt-md-2"
               label="Year"
               v-model="year"
               type="number"
             ></v-text-field>
           </v-flex>
 
-          <v-flex xs6 sm2 md2>
-            <v-btn @click="searchMovie" icon class="mx-2">
+          <v-flex xs6 sm2 md1 lg1 xl1>
+            <v-btn @click="searchMovie" icon class="mx-2 mt-md-2">
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
           </v-flex>
