@@ -1,4 +1,4 @@
-# ensemble
+# Ensemble - Movie search project
 
 ## Project setup
 ```
